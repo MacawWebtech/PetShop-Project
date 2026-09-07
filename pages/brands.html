@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Featured Brands | Pawsome & Co. Pet Shop</title>
+<meta name="description" content="Discover the trusted pet food, toy, grooming, and aquarium brands carried at Pawsome and Co.">
+<meta name="keywords" content="pet shop, pet accessories, dog food, cat toys, bird supplies, aquarium, pet grooming, pet care">
+<link rel="canonical" href="https://www.pawsomeandco.example/pages/brands.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Featured Brands | Pawsome & Co. Pet Shop">
+<meta property="og:description" content="Discover the trusted pet food, toy, grooming, and aquarium brands carried at Pawsome and Co.">
+<meta property="og:image" content="https://placehold.co/1200x630/FF6F3C/FFFFFF?text=Pawsome+%26+Co.">
+<meta property="og:url" content="https://www.pawsomeandco.example/pages/brands.html">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Favicon -->
+<link rel="icon" href="../assets/images/favicon.png" type="image/png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!-- Theme styles -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<script>
+  /* Set theme before paint to avoid flash */
+  (function(){
+    var t = localStorage.getItem('pawsome-theme');
+    if(!t){ t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Pawsome & Co.",
+  "image": "https://placehold.co/800x600/FF6F3C/FFFFFF?text=Pawsome+%26+Co.",
+  "@id": "https://www.pawsomeandco.example",
+  "url": "https://www.pawsomeandco.example",
+  "telephone": "+1-555-010-7246",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "482 Maple Grove Avenue",
+    "addressLocality": "Portland",
+    "addressRegion": "OR",
+    "postalCode": "97205",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "19:00" }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-pet container-xl-custom" aria-label="Main navigation">
+    <a class="brand-logo" href="index.html">
+      <img src="../assets/images/logo.png" alt="Pawsome &amp; Co. Logo">
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu" style="min-width:44px;min-height:44px;">
+      <i class="bi bi-list fs-2"></i>
+    </button>
+
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav nav-pet mx-auto">
+        <li class="nav-item dropdown nav-item-home-dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="navHomeDropdown" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home</a>
+          <ul class="dropdown-menu home-dropdown-menu" aria-labelledby="navHomeDropdown">
+            <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+            <li><a class="dropdown-item" href="index-2.html">Home 02</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="grooming.html">Grooming Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="header-actions">
+      <button class="btn-icon-circle d-none d-md-inline-flex" data-open-search type="button" aria-label="Search products">
+        <i class="bi bi-search" aria-hidden="true"></i>
+      </button>
+      <a href="shop.html" class="btn-icon-circle position-relative" aria-label="View cart, 3 items">
+        <i class="bi bi-basket2" aria-hidden="true"></i>
+        <span class="cart-badge">3</span>
+      </a>
+      <button class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <i class="bi bi-moon-stars icon-moon" aria-hidden="true"></i>
+        <i class="bi bi-sun icon-sun" aria-hidden="true"></i>
+      </button>
+      <a href="shop.html" class="btn btn-primary-pet d-none d-md-inline-block">Shop Now</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-pet" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <span class="brand-logo" id="mobileMenuLabel">
+      <img src="../assets/images/logo.png" alt="Pawsome &amp; Co. Logo">
+
+    </span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home 01</a></li>
+      <li class="nav-item"><a class="nav-link" href="index-2.html">Home 02</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+      <li class="nav-item"><a class="nav-link" href="grooming.html">Grooming Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+    <a href="shop.html" class="btn btn-primary-pet w-100 mt-3">Shop Now</a>
+  </div>
+</div>
+
+<!-- Search Overlay -->
+<div class="search-overlay">
+  <div class="search-box">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="mb-0">Search Products</h3>
+      <button class="btn-close" data-close-search aria-label="Close search"></button>
+    </div>
+    <form role="search" action="shop.html" method="get">
+      <div class="input-group">
+        <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-search"></i></span>
+        <input type="search" name="q" class="form-control border-start-0" placeholder="Search for dog food, cat toys, aquariums..." aria-label="Search products">
+        <button class="btn btn-primary-pet" type="submit">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+<main id="main-content">
+
+  <div class="page-banner paw-pattern">
+    <div class="container-xl-custom">
+      <h1>Brands</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-pet">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Brands</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <section>
+    <div class="container-xl-custom">
+      <div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Pet Food Brands</span>
+        <h2>Nutrition Brands We Trust</h2>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+        <h3>NutriPaws</h3>
+           
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+           <h3>WildBite</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>PurrFuel</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>Hound</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Toy Brands</span>
+        <h2>Playtime Favorites</h2>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>FetchCo</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>WhiskerPlay</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>FeatherFun</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>Burrow</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+<div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Grooming Brands</span>
+        <h2>Salon-Quality Care</h2>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>SilkCoat</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>TrimRight</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>GlossWave</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>PureClean</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Aquarium Brands</span>
+        <h2>Trusted Aquatics Equipment</h2>
+      </div>
+      <div class="row g-4 mb-5">
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>ClearFlow</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>ReefGlow</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>AquaPulse</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 reveal-up">
+          <div class="brand-card">
+            <h3>AquaTherm</h3>
+            <p class="small mb-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container-xl-custom">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a class="brand-logo mb-3 d-inline-flex" href="index.html">
+            <img src="../assets/images/logo.png" alt="Pawsome &amp; Co. Logo">
+          </a>
+          <p>Trusted pet food, toys, and accessories for dogs, cats, birds, fish, and small animals &mdash; plus grooming and care advice from people who love pets as much as you do.</p>
+          <div class="social-icons">
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-6">
+        <h4 class="footer-title">Shop Categories</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html">Dogs</a></li>
+          <li><a href="shop.html">Cats</a></li>
+          <li><a href="shop.html">Birds</a></li>
+          <li><a href="shop.html">Fish &amp; Aquarium</a></li>
+          <li><a href="shop.html">Small Animals</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Contact Info</h4>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-geo-alt"></i><span>482 Maple Grove Avenue, Portland, OR 97205</span></li>
+          <li><i class="bi bi-telephone"></i><span>+1 (555) 010-7246</span></li>
+          <li><i class="bi bi-envelope"></i><span>hello@pawsomeandco.example</span></li>
+          <li><i class="bi bi-clock"></i><span>Mon&ndash;Fri 9am&ndash;8pm, Sat&ndash;Sun 10am&ndash;7pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0">&copy; 2026 Pawsome &amp; Co. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top" type="button">
+  <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* ==========================================================================
+   Dark Mode Enhancements
+   Base color tokens live in style.css under [data-theme='dark'].
+   This file handles adjustments that aren't pure variable swaps.
+   ========================================================================== */
+
+[data-theme='dark'] .site-header {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+[data-theme='dark'] .navbar-toggler {
+  filter: invert(1);
+}
+
+/* Slightly dim photographic imagery so whites don't glare against dark UI */
+[data-theme='dark'] .category-card img,
+[data-theme='dark'] .product-thumb img,
+[data-theme='dark'] .blog-thumb img,
+[data-theme='dark'] .hero-visual img,
+[data-theme='dark'] .split-media img {
+  filter: brightness(0.92) saturate(1.05);
+}
+
+[data-theme='dark'] .brand-logo-wrap img {
+  filter: grayscale(1) invert(0.85) opacity(0.85);
+}
+[data-theme='dark'] .brand-card:hover .brand-logo-wrap img {
+  filter: invert(0.85) opacity(1);
+}
+
+[data-theme='dark'] .btn-outline-pet {
+  border-color: var(--ink-300);
+  color: var(--ink-900);
+}
+
+[data-theme='dark'] .form-control::placeholder,
+[data-theme='dark'] .form-select {
+  color: var(--ink-500);
+}
+
+[data-theme='dark'] ::selection {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+[data-theme='dark'] .newsletter-section {
+  background: #0c141b;
+}
+
+[data-theme='dark'] .btn-close {
+  filter: invert(1);
+}
+
+/* The wishlist heart button and pagination numbers use a hard-coded near-
+   white background with `color: var(--ink-900)` for the icon/number. In
+   dark mode --ink-900 flips to a light color, so a light icon on a light
+   background became invisible. Give both an explicit dark-mode background
+   so the icon/number keeps proper contrast. */
+[data-theme='dark'] .wishlist-btn {
+  background: rgba(28, 37, 48, 0.85);
+  color: var(--ink-900);
+}
+[data-theme='dark'] .wishlist-btn:hover,
+[data-theme='dark'] .wishlist-btn.active {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+[data-theme='dark'] .pagination-pet .page-link {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--ink-900);
+}
+[data-theme='dark'] .pagination-pet .page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Smooth cross-fade when the theme attribute changes */
+body,
+.site-header,
+.product-card,
+.category-card,
+.blog-card,
+.testimonial-card,
+.grooming-card,
+.brand-card,
+.form-card,
+.shop-sidebar,
+.blog-sidebar-widget,
+.pricing-card {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}

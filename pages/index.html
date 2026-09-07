@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Pawsome & Co. Pet Shop</title>
+<meta name="description" content="Pawsome and Co. is your one-stop pet shop for dog, cat, bird, fish, and small animal food, toys, accessories, and professional grooming services.">
+<meta name="keywords" content="pet shop, pet accessories, dog food, cat toys, bird supplies, aquarium, pet grooming, pet care">
+<link rel="canonical" href="https://www.pawsomeandco.example/pages/index.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Home | Pawsome & Co. Pet Shop">
+<meta property="og:description" content="Pawsome and Co. is your one-stop pet shop for dog, cat, bird, fish, and small animal food, toys, accessories, and professional grooming services.">
+<meta property="og:image" content="https://placehold.co/1200x630/FF6F3C/FFFFFF?text=Pawsome+%26+Co.">
+<meta property="og:url" content="https://www.pawsomeandco.example/pages/index.html">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Favicon -->
+<link rel="icon" href="../assets/images/favicon.png" type="image/png">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!-- Theme styles -->
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<script>
+  /* Set theme before paint to avoid flash */
+  (function(){
+    var t = localStorage.getItem('pawsome-theme');
+    if(!t){ t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "name": "Pawsome & Co.",
+  "image": "https://placehold.co/800x600/FF6F3C/FFFFFF?text=Pawsome+%26+Co.",
+  "@id": "https://www.pawsomeandco.example",
+  "url": "https://www.pawsomeandco.example",
+  "telephone": "+1-555-010-7246",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "482 Maple Grove Avenue",
+    "addressLocality": "Portland",
+    "addressRegion": "OR",
+    "postalCode": "97205",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "10:00", "closes": "19:00" }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-pet container-xl-custom" aria-label="Main navigation">
+    <a class="brand-logo" href="index.html">
+      <img src="../assets/images/logo.png" alt="Pawsome &amp; Co. Logo">
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Open menu" style="min-width:44px;min-height:44px;">
+      <i class="bi bi-list fs-2"></i>
+    </button>
+
+    <div class="collapse navbar-collapse d-none d-lg-flex">
+      <ul class="navbar-nav nav-pet mx-auto">
+        <li class="nav-item dropdown nav-item-home-dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="navHomeDropdown" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">Home</a>
+          <ul class="dropdown-menu home-dropdown-menu" aria-labelledby="navHomeDropdown">
+            <li><a class="dropdown-item" href="index.html">Home 01</a></li>
+            <li><a class="dropdown-item" href="index-2.html">Home 02</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="brands.html">Brands</a></li>
+        <li class="nav-item"><a class="nav-link" href="grooming.html">Grooming Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="header-actions">
+      <button class="btn-icon-circle d-none d-md-inline-flex" data-open-search type="button" aria-label="Search products">
+        <i class="bi bi-search" aria-hidden="true"></i>
+      </button>
+      <a href="shop.html" class="btn-icon-circle position-relative" aria-label="View cart, 3 items">
+        <i class="bi bi-basket2" aria-hidden="true"></i>
+        <span class="cart-badge">3</span>
+      </a>
+      <button class="theme-toggle-btn" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <i class="bi bi-moon-stars icon-moon" aria-hidden="true"></i>
+        <i class="bi bi-sun icon-sun" aria-hidden="true"></i>
+      </button>
+      <a href="shop.html" class="btn btn-primary-pet d-none d-md-inline-block">Shop Now</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Offcanvas Menu -->
+<div class="offcanvas offcanvas-start offcanvas-pet" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header">
+    <span class="brand-logo" id="mobileMenuLabel">
+           <img src="../assets/images/logo.png" alt="Pawsome &amp; Co. Logo">
+    </span>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close menu"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home 01</a></li>
+      <li class="nav-item"><a class="nav-link" href="index-2.html">Home 02</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="brands.html"> Brands</a></li>
+      <li class="nav-item"><a class="nav-link" href="grooming.html">Grooming Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">Blogs</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+    </ul>
+    <a href="shop.html" class="btn btn-primary-pet w-100 mt-3">Shop Now</a>
+  </div>
+</div>
+
+<!-- Search Overlay -->
+<div class="search-overlay">
+  <div class="search-box">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3 class="mb-0">Search Products</h3>
+      <button class="btn-close" data-close-search aria-label="Close search"></button>
+    </div>
+    <form role="search" action="shop.html" method="get">
+      <div class="input-group">
+        <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-search"></i></span>
+        <input type="search" name="q" class="form-control border-start-0" placeholder="Search for dog food, cat toys, aquariums..." aria-label="Search products">
+        <button class="btn btn-primary-pet" type="submit">Search</button>
+      </div>
+    </form>
+  </div>
+</div>
+<main id="main-content">
+
+  <!-- ============ SECTION 1: HERO ============ -->
+  <section class="hero-section paw-pattern">
+    <div class="container-xl-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-up">
+          <span class="hero-badge"><i class="bi bi-stars"></i> Everything Your Pet Loves</span>
+          <h1>Happy Pets Start With The Right Care</h1>
+          <p class="fs-5 mb-4">Discover quality food, toys, accessories, grooming essentials, and everything your beloved pet needs &mdash; hand-picked by fellow pet parents.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="shop.html" class="btn btn-primary-pet btn-lg">Shop Now</a>
+            <a href="#shop-by-type" class="btn btn-outline-pet btn-lg">Explore Categories</a>
+          </div>
+          <div class="d-flex gap-4 mt-5">
+            <div>
+              <h3 class="mb-0">12k+</h3>
+              <p class="mb-0 small">Happy pets served</p>
+            </div>
+            <div>
+              <h3 class="mb-0">4.9<i class="bi bi-star-fill text-warning fs-6 ms-1"></i></h3>
+              <p class="mb-0 small">Average rating</p>
+            </div>
+            <div>
+              <h3 class="mb-0">40+</h3>
+              <p class="mb-0 small">Trusted brands</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="position-relative mx-auto" style="max-width:480px;">
+            <div class="hero-visual">
+              <img src="../assets/images/unite.jpg" alt="A dog, cat, and bird sitting together, representing the range of pets Pawsome and Co. serves" loading="eager">
+            </div>
+            <div class="floating-card card-a">
+              <span class="icon-wrap"><i class="bi bi-truck"></i></span>
+              Free delivery over $49
+            </div>
+            <div class="floating-card card-b">
+              <span class="icon-wrap"><i class="bi bi-shield-check"></i></span>
+              Vet-approved products
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2: SHOP BY PET TYPE ============ -->
+  <section id="shop-by-type">
+    <div class="container-xl-custom">
+      <div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Shop By Pet</span>
+        <h2>Find Exactly What Your Companion Needs</h2>
+        <p>Curated collections for every kind of pet in your household, from playful pups to quiet aquariums.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 reveal-up">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <img src="../assets/images/dogs.jpg" alt="Labrador retriever browsing the dog accessories collection" loading="lazy">
+            <div class="category-card-body">
+              <h3>Dogs</h3>
+              <p>Food, leashes, beds &amp; toys for every breed.</p>
+              <span class="explore-link">Explore Dogs <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-up">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <img class="imgnm" src="../assets/images/cats.jpg" alt="Tabby cat next to scratching posts and cat toys" loading="lazy">
+            <div class="category-card-body">
+              <h3>Cats</h3>
+              <p>Scratchers, litter essentials, and enrichment toys.</p>
+              <span class="explore-link">Explore Cats <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-up">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <img class="imgnm" src="../assets/images/birds.jpg" alt="Colorful parrot perched near bird feeders and cages" loading="lazy">
+            <div class="category-card-body">
+              <h3>Birds</h3>
+              <p>Cages, feeders, perches, and nutritious seed.</p>
+              <span class="explore-link">Explore Birds <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-up">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <img class="imgnm" src="../assets/images/fish and aqua.jpg" alt="Freshwater aquarium with tropical fish and decorations" loading="lazy">
+            <div class="category-card-body">
+              <h3>Fish &amp; Aquarium</h3>
+              <p>Tanks, filters, decor, and water care essentials.</p>
+              <span class="explore-link">Explore Aquatics <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-up">
+          <a href="shop.html" class="category-card d-block text-decoration-none">
+            <img class="imgnm" src="../assets/images/small pet.jpg">
+            <div class="category-card-body">
+              <h3>Small Animals</h3>
+              <p>Habitats, bedding, and treats for hamsters, rabbits</p>
+              <span class="explore-link">Explore Small Pets <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal-up">
+          <a href="grooming.html" class="category-card d-block text-decoration-none">
+            <img class="imgnm" src="../assets/images/pet1.png"Dog receiving a bath during a professional grooming session" loading="lazy">
+            <div class="category-card-body">
+              <h3>Grooming</h3>
+              <p>Bath and nail care from certified groomers.</p>
+              <span class="explore-link">Book Grooming <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3: POPULAR PRODUCTS ============ -->
+  <section class="bg-cream">
+    <div class="container-xl-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3 reveal-up">
+        <div class="section-heading mb-0">
+          <span class="section-kicker">Popular Picks</span>
+          <h2>Loved By Pets, Trusted By Owners</h2>
+        </div>
+        <a href="shop.html" class="btn btn-outline-pet">View All Products</a>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/dog foods.jpg" loading="lazy">
+              <span class="product-badge">Bestseller</span>
+              <button class="wishlist-btn" aria-label="Add Premium Dog Food to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Dog Food</span>
+              <h3 class="product-title"><a href="product-details.html">Premium Grain-Free Dog Food</a></h3>
+              <div class="product-rating">★★★★★ <span>(128)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$34.99</span>
+                <button class="btn-icon-circle" aria-label="Add Premium Dog Food to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/cat toy.jpg"Interactive feather wand cat toy" loading="lazy">
+              <button class="wishlist-btn" aria-label="Add Interactive Cat Toy to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Cat Toys</span>
+              <h3 class="product-title"><a href="product-details.html">Interactive Feather Wand Toy</a></h3>
+              <div class="product-rating">★★★★★ <span>(94)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$12.50</span>
+                <button class="btn-icon-circle" aria-label="Add Interactive Cat Toy to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/bed.jpg" alt="Round plush pet bed in cream color" loading="lazy">
+              <span class="product-badge">-15%</span>
+              <button class="wishlist-btn" aria-label="Add Comfortable Pet Bed to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Pet Beds</span>
+              <h3 class="product-title"><a href="product-details.html">Comfortable Orthopedic Pet Bed</a></h3>
+              <div class="product-rating">★★★★☆ <span>(76)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$45.00 <span class="old-price">$53.00</span></span>
+                <button class="btn-icon-circle" aria-label="Add Comfortable Pet Bed to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/feeding set.jpg" alt="Bird feeding set with seed cups and perch" loading="lazy">
+              <button class="wishlist-btn" aria-label="Add Bird Feeding Set to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Bird Supplies</span>
+              <h3 class="product-title"><a href="product-details.html">Deluxe Bird Feeding Set</a></h3>
+              <div class="product-rating">★★★★★ <span>(41)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$18.75</span>
+                <button class="btn-icon-circle" aria-label="Add Bird Feeding Set to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/fish and aqua.jpg" alt="Aquarium decoration with driftwood and plants" loading="lazy">
+              <button class="wishlist-btn" aria-label="Add Aquarium Decoration to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Aquarium</span>
+              <h3 class="product-title"><a href="product-details.html">Natural Driftwood Aquarium Decor</a></h3>
+              <div class="product-rating">★★★★☆ <span>(33)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$21.99</span>
+                <button class="btn-icon-circle" aria-label="Add Aquarium Decoration to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/small pet house.jpg" alt="Wooden hideout house for hamsters and small pets" loading="lazy">
+              <span class="product-badge">New</span>
+              <button class="wishlist-btn" aria-label="Add Small Pet House to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Small Animals</span>
+              <h3 class="product-title"><a href="product-details.html">Cozy Wooden Small Pet House</a></h3>
+              <div class="product-rating">★★★★★ <span>(19)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$16.20</span>
+                <button class="btn-icon-circle" aria-label="Add Small Pet House to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/dog chew.jpg" alt="Pouch of natural dog chew treats" loading="lazy">
+              <button class="wishlist-btn" aria-label="Add Dog Chew Treats to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Treats</span>
+              <h3 class="product-title"><a href="product-details.html">Natural Dog Chew Treats</a></h3>
+              <div class="product-rating">★★★★★ <span>(58)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$9.99</span>
+                <button class="btn-icon-circle" aria-label="Add Dog Chew Treats to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 reveal-up">
+          <div class="product-card">
+            <div class="product-thumb">
+              <img src="../assets/images/scratch tower.jpg" alt="Multi-level cat scratching tower with sisal posts" loading="lazy">
+              <button class="wishlist-btn" aria-label="Add Cat Scratch Tower to wishlist" aria-pressed="false"><i class="bi bi-heart"></i></button>
+              <a href="product-details.html" class="btn btn-sm-pet btn-primary-pet quick-view-btn">Quick View</a>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Cat Furniture</span>
+              <h3 class="product-title"><a href="product-details.html">Multi-Level Cat Scratch Tower</a></h3>
+              <div class="product-rating">★★★★☆ <span>(67)</span></div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="product-price">$79.00</span>
+                <button class="btn-icon-circle" aria-label="Add Cat Scratch Tower to cart"><i class="bi bi-basket2"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4: WHY CHOOSE US ============ -->
+  <section>
+    <div class="container-xl-custom">
+      <div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Why Pet Owners Choose Us</span>
+        <h2>Care That Goes Beyond The Checkout</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-6 feature-card reveal-up">
+          <div class="feature-icon"><i class="bi bi-award"></i></div>
+          <h3>Premium Quality</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="col-lg-3 col-6 feature-card reveal-up">
+          <div class="feature-icon"><i class="bi bi-patch-check"></i></div>
+          <h3>Trusted Brands Foods</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="col-lg-3 col-6 feature-card reveal-up">
+          <div class="feature-icon"><i class="bi bi-headset"></i></div>
+          <h3>Friendly Support</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="col-lg-3 col-6 feature-card reveal-up">
+          <div class="feature-icon"><i class="bi bi-truck"></i></div>
+          <h3>Fast &amp; Safe Delivery</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5: GROOMING SERVICES ============ -->
+  <section class="bg-cream">
+    <div class="container-xl-custom">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 reveal-up">
+          <div class="split-media">
+            <img src="../assets/images/pet grooming.jpg" alt="Professional groomer gently bathing a small dog" loading="lazy" height="900px">
+          </div>
+        </div>
+        <div class="col-lg-6 reveal-up">
+          <span class="section-kicker">Grooming Services</span>
+          <h2>Spa Days Your Pet Will Actually Enjoy</h2>
+          <ul class="service-list">
+            <li><i class="bi bi-check-circle-fill"></i> Bath &amp; Blow Dry</li>
+            <li><i class="bi bi-check-circle-fill"></i> Nail Trimming</li>
+            <li><i class="bi bi-check-circle-fill"></i> Fur Styling</li>
+            <li><i class="bi bi-check-circle-fill"></i> Ear Cleaning</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6: NEW ARRIVALS ============ -->
+  <section>
+    <div class="container-xl-custom">
+      <div class="section-heading text-center reveal-up">
+        <span class="section-kicker">Just Landed</span>
+        <h2>New Arrivals</h2>
+      </div>
+      <div id="newArrivalsCarousel" class="carousel slide reveal-up" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <img src="../assets/images/cat water fountain.jpg" alt="Automatic cat water fountain">
+                    <span class="product-badge">New</span>
+                  </div>
+                  <div class="product-info">
+                    <span class="product-category">Cat Accessories</span>
+                    <h3 class="product-title"><a href="product-details.html">Automatic Cat Water Fountain</a></h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="product-price">$28.90</span>
+                      <button class="btn-icon-circle" aria-label="Add to cart"><i class="bi bi-basket2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <img src="../assets/images/dog rain coat.jpg" alt="Waterproof dog raincoat">
+                    <span class="product-badge">New</span>
+                  </div>
+                  <div class="product-info">
+                    <span class="product-category">Dog Apparel</span>
+                    <h3 class="product-title"><a href="product-details.html">Waterproof Dog Raincoat</a></h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="product-price">$24.00</span>
+                      <button class="btn-icon-circle" aria-label="Add to cart"><i class="bi bi-basket2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <img src="../assets/images/aquarium led light.jpg" alt="LED aquarium light strip">
+                    <span class="product-badge">New</span>
+                  </div>
+                  <div class="product-info">
+                    <span class="product-category">Aquarium</span>
+                    <h3 class="product-title"><a href="product-details.html">Full-Spectrum Aquarium LED Light</a></h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="product-price">$39.50</span>
+                      <button class="btn-icon-circle" aria-label="Add to cart"><i class="bi bi-basket2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="product-card">
+                  <div class="product-thumb">
+                    <img src="../assets/images/small pet tunnel.jpg" alt="Small pet play tunnel set">
+                    <span class="product-badge">New</span>
+                  </div>
+                  <div class="product-info">
+                    <span class="product-category">Small Animals</span>
+                    <h3 class="product-title"><a href="product-details.html">Small Pet Play Tunnel Set</a></h3>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <span class="product-price">$14.30</span>
+                      <button class="btn-icon-circle" aria-label="Add to cart"><i class="bi bi-basket2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#newArrivalsCarousel" data-bs-slide="prev">
+          <span class="btn-icon-circle" aria-hidden="true"><i class="bi bi-chevron-left"></i></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#newArrivalsCarousel" data-bs-slide="next">
+          <span class="btn-icon-circle" aria-hidden="true"><i class="bi bi-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7: PET CARE TIPS ============ -->
+  <section class="bg-cream">
+    <div class="container-xl-custom">
+      <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-3 reveal-up">
+        <div class="section-heading mb-0">
+          <span class="section-kicker">From The Blog</span>
+          <h2>Pet Care Tips &amp; Guides</h2>
+        </div>
+        <a href="blog.html" class="btn btn-outline-pet">View All Articles</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 reveal-up">
+          <article class="blog-card">
+            <div class="blog-thumb"><img src="../assets/images/dog food.jpg"></div>
+            <div class="blog-body">
+              <div class="blog-meta"><span class="cat-tag">Nutrition</span><span>Aug 12, 2026</span></div>
+              <h3><a href="blog-details.html">How to Choose the Right Food for Your Dog</a></h3>
+              <p>Breed, age, and activity level all shape what belongs in your dog's bowl. Here's how to decide.</p>
+              <a href="blog-details.html" class="read-more-link">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 reveal-up">
+          <article class="blog-card">
+            <div class="blog-thumb"><img src="../assets/images/cat owner.jpg" alt="Kitten exploring a new home" loading="lazy"></div>
+            <div class="blog-body">
+              <div class="blog-meta"><span class="cat-tag">Pet Lifestyle</span><span>Aug 05, 2026</span></div>
+              <h3><a href="blog-details.html">Essential Tips for First-Time Cat Owners</a></h3>
+              <p>From litter training to scratching posts, here's what every new cat parent should know the training.</p>
+              <a href="blog-details.html" class="read-more-link">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+        <div class="col-lg-4 reveal-up">
+          <article class="blog-card">
+            <div class="blog-thumb"><img src="../assets/images/pet env.jpg" alt="Cozy pet corner with bed and toys" loading="lazy"></div>
+            <div class="blog-body">
+              <div class="blog-meta"><span class="cat-tag">Pet Health</span><span>Jul 29, 2026</span></div>
+              <h3><a href="blog-details.html">Creating a Healthy Environment for Your Pet</a></h3>
+              <p>Small changes at home can make a big difference to your pet's comfort and wellbeing.</p>
+              <a href="blog-details.html" class="read-more-link">Read More <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8: NEWSLETTER CTA ============ -->
+  <section>
+    <div class="container-xl-custom">
+      <div class="newsletter-section paw-pattern reveal-up">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <h2>Stay Updated With Pet Care Tips &amp; Special Offers</h2>
+            <p class="mb-0">Join our pack for seasonal care guides, new product alerts, and members-only discounts.</p>
+          </div>
+          <div class="col-lg-5">
+            <form class="newsletter-form d-flex" data-validate-form novalidate>
+              <label for="newsletterEmail" class="visually-hidden">Email address</label>
+              <input type="email" id="newsletterEmail" name="email" class="form-control" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-primary-pet">
+                <span class="spinner-border btn-spinner" role="status" aria-hidden="true"></span>
+                <span class="btn-label-text">Subscribe</span>
+              </button>
+            </form>
+            <p class="small mt-2 mb-0" style="color:rgba(255,255,255,0.6);">We respect your inbox &mdash; unsubscribe anytime.</p>
+            <div class="form-success-msg mt-2" style="background:rgba(46,139,122,0.25); color:#8fe6d1;"><i class="bi bi-check-circle-fill"></i> You're subscribed! Welcome to the pack.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container-xl-custom">
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="footer-brand">
+          <a class="brand-logo mb-3 d-inline-flex" href="index.html">
+            <img src="../assets/images/logo.png" alt="Pawsome &amp; Co. Logo">
+          </a>
+          <p>Trusted pet food, toys, and accessories for dogs, cats, birds, fish, and small animals &mdash; plus grooming and care advice from people who love pets as much as you do.</p>
+          <div class="social-icons">
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="btn-icon-circle" aria-label="Pawsome and Co. on YouTube"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-6 col-6">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-6">
+        <h4 class="footer-title">Shop Categories</h4>
+        <ul class="footer-links">
+          <li><a href="shop.html">Dogs</a></li>
+          <li><a href="shop.html">Cats</a></li>
+          <li><a href="shop.html">Birds</a></li>
+          <li><a href="shop.html">Fish &amp; Aquarium</a></li>
+          <li><a href="shop.html">Small Animals</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h4 class="footer-title">Contact Info</h4>
+        <ul class="footer-contact list-unstyled">
+          <li><i class="bi bi-geo-alt"></i><span>482 Maple Grove Avenue, Portland, OR 97205</span></li>
+          <li><i class="bi bi-telephone"></i><span>+1 (555) 010-7246</span></li>
+          <li><i class="bi bi-envelope"></i><span>hello@pawsomeandco.example</span></li>
+          <li><i class="bi bi-clock"></i><span>Mon&ndash;Fri 9am&ndash;8pm, Sat&ndash;Sun 10am&ndash;7pm</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0">&copy; 2026 Pawsome &amp; Co. All rights reserved.</p>
+      <div class="d-flex gap-3">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top" type="button">
+  <i class="bi bi-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

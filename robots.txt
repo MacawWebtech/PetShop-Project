@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pages/coming-soon.html
+Disallow: /pages/404.html
+
+Sitemap: https://www.pawsomeandco.example/sitemap.xml

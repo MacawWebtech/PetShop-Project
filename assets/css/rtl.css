@@ -1,0 +1,80 @@
+/* ==========================================================================
+   RTL Support
+   Loaded only when <html dir="rtl"> is set (e.g. lang="ar" / lang="he").
+   Most spacing already uses logical properties (margin-inline, inset-inline,
+   border-inline-start) in style.css, so this file covers the remaining
+   physical-property exceptions and icon mirroring.
+   ========================================================================== */
+
+[dir='rtl'] body {
+  font-family: 'Inter', 'Tahoma', system-ui, sans-serif;
+  text-align: right;
+}
+
+/* Navigation */
+[dir='rtl'] .navbar-nav {
+  padding-right: 0;
+}
+[dir='rtl'] .dropdown-menu {
+  text-align: right;
+  right: 0;
+  left: auto;
+}
+
+/* Icons that imply direction of travel should flip */
+[dir='rtl'] .explore-link i.bi-arrow-right,
+[dir='rtl'] .read-more-link i.bi-arrow-right,
+[dir='rtl'] .btn i.bi-arrow-right {
+  transform: scaleX(-1);
+}
+
+/* Breadcrumb separators */
+[dir='rtl'] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-left: 0.5rem;
+  padding-right: 0;
+}
+
+/* Carousel controls */
+[dir='rtl'] .carousel-control-prev-icon {
+  background-image: var(--bs-carousel-control-next-icon-bg, none);
+  transform: scaleX(-1);
+}
+[dir='rtl'] .carousel-control-next-icon {
+  transform: scaleX(-1);
+}
+
+/* Offcanvas should open from the right edge visually */
+[dir='rtl'] .offcanvas-end {
+  right: auto;
+  left: 0;
+}
+[dir='rtl'] .offcanvas-start {
+  left: auto;
+  right: 0;
+}
+
+/* Form check / radio alignment */
+[dir='rtl'] .form-check {
+  padding-right: 1.5em;
+  padding-left: 0;
+}
+[dir='rtl'] .form-check .form-check-input {
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+
+/* Quantity selector and size chips already use flex + gap, safe by default */
+
+/* Hero blob visual mirrors nicely without change, but floating cards swap sides */
+[dir='rtl'] .floating-card.card-a { left: auto; right: -6%; }
+[dir='rtl'] .floating-card.card-b { right: auto; left: -8%; }
+
+/* Testimonial / footer text alignment on small screens */
+[dir='rtl'] .text-lg-start { text-align: right !important; }
+[dir='rtl'] .text-lg-end { text-align: left !important; }
+
+/* Table & pricing lists already switch via text-align: start in component CSS */
+
+/* Back to top button mirrors to the opposite corner using logical inset already;
+   no override necessary since inset-inline-end is direction-aware. */
