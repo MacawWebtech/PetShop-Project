@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Owen Blake">
+  <title>Owen Blake</title>
+  <rect width="200" height="200" fill="#2e8b7a"/>
+  <circle cx="160" cy="34" r="46" fill="#fff" opacity=".16"/>
+  
+  <path d="M20 200 Q24 152 78 146 L122 146 Q176 152 180 200Z" fill="#1c2530"/>
+  <path d="M84 146 L100 168 L116 146Z" fill="#d9a67c"/>
+  <rect x="88" y="124" width="24" height="28" rx="10" fill="#d9a67c"/>
+  <ellipse cx="100" cy="94" rx="35" ry="40" fill="#d9a67c"/>
+  <ellipse cx="65" cy="98" rx="6" ry="9" fill="#d9a67c"/><ellipse cx="135" cy="98" rx="6" ry="9" fill="#d9a67c"/>
+  <path d="M60 84 Q56 44 100 42 Q144 44 140 84 Q136 66 118 60 Q96 70 72 62 Q62 68 60 84Z" fill="#3b2a20"/>
+  <circle cx="84" cy="94" r="3.6" fill="#1c2530"/><circle cx="116" cy="94" r="3.6" fill="#1c2530"/>
+  <path d="M77 84 Q84 80 91 84 M109 84 Q116 80 123 84" stroke="#3b2a20" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <ellipse cx="72" cy="108" rx="6" ry="4" fill="#ff8a7a" opacity=".35"/><ellipse cx="128" cy="108" rx="6" ry="4" fill="#ff8a7a" opacity=".35"/>
+  <path d="M68 96 Q70 134 100 136 Q130 134 132 96 Q124 116 100 116 Q76 116 68 96Z" fill="#3b2a20"/><path d="M90 118 Q100 126 110 118" stroke="#f3d9c9" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customization Guide | Pawsome & Co. Template Docs</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+</head>
+<body class="bg-cream">
+<div class="container-xl-custom py-5" style="max-width:840px;">
+  <a href="../pages/index.html" class="brand-logo mb-4 d-inline-flex">
+    <span class="paw-badge"><i class="bi bi-paw-fill"></i></span> Pawsome<span class="brand-tail">&amp;Co.</span>
+  </a>
+  <div class="d-flex gap-3 mb-4 flex-wrap">
+    <a href="installation-guide.html" class="btn btn-sm-pet btn-outline-pet">Installation</a>
+    <a href="customization-guide.html" class="btn btn-sm-pet btn-primary-pet">Customization</a>
+    <a href="credits.html" class="btn btn-sm-pet btn-outline-pet">Credits</a>
+  </div>
+
+  <h1>Customization Guide</h1>
+
+  <h2 class="h4 mt-4">Changing Colors</h2>
+  <p>All colors are defined as CSS variables at the top of <code>assets/css/style.css</code> inside <code>:root</code>. Update the hex values there and every button, card, badge, and accent updates automatically:</p>
+  <pre class="bg-surface p-3 rounded-pet border small"><code>:root {
+  --primary-color: #FF6F3C;   /* main brand color */
+  --accent-color: #2E8B7A;    /* secondary accent */
+  --accent-yellow: #FFC93C;
+  --secondary-color: #FFF6EC; /* cream background */
+}</code></pre>
+  <p>Dark mode colors live in the adjacent <code>[data-theme='dark']</code> block in the same file.</p>
+
+  <h2 class="h4 mt-4">Changing Fonts</h2>
+  <p>Update the Google Fonts <code>&lt;link&gt;</code> in each page's <code>&lt;head&gt;</code>, then change the two font variables in <code>style.css</code>:</p>
+  <pre class="bg-surface p-3 rounded-pet border small"><code>--font-heading: 'Baloo 2', system-ui, sans-serif;
+--font-body: 'Inter', system-ui, sans-serif;</code></pre>
+
+  <h2 class="h4 mt-4">Replacing Images</h2>
+  <p>Every image currently points to a <code>placehold.co</code> placeholder (e.g. <code>https://placehold.co/600x400/FF6F3C/FFFFFF?text=Dog+Category</code>) so the template always renders without broken links. Replace each <code>src</code> with your own licensed photography in <code>assets/images/</code> and keep the descriptive <code>alt</code> text, updating it to match your new image.</p>
+
+  <h2 class="h4 mt-4">Editing Navigation</h2>
+  <p>The header navigation, offcanvas mobile menu, and footer links are repeated at the top/bottom of every page. Update the <code>&lt;nav class="navbar-nav nav-pet"&gt;</code> and <code>#mobileMenu</code> blocks, and mirror the change in the footer's Quick Links column.</p>
+
+  <h2 class="h4 mt-4">Dark Mode Setup</h2>
+  <p>Dark mode is already wired up: <code>assets/js/main.js</code> toggles <code>data-theme="dark"</code> on <code>&lt;html&gt;</code>, persists the choice in <code>localStorage</code>, and respects the visitor's OS-level preference on first visit. To adjust dark-mode-only tweaks (image brightness, shadows), edit <code>assets/css/dark-mode.css</code>.</p>
+
+  <h2 class="h4 mt-4">RTL Setup</h2>
+  <p>To serve a page in RTL (Arabic, Hebrew, etc.), set <code>&lt;html lang="ar" dir="rtl"&gt;</code> and add this line inside <code>&lt;head&gt;</code>, after the main stylesheet:</p>
+  <pre class="bg-surface p-3 rounded-pet border small"><code>&lt;link rel="stylesheet" href="../assets/css/rtl.css"&gt;</code></pre>
+  <p>Most spacing in <code>style.css</code> already uses logical CSS properties (<code>margin-inline</code>, <code>inset-inline-end</code>), so <code>rtl.css</code> only needs to cover the remaining exceptions (icon mirroring, offcanvas side, etc.).</p>
+
+  <h2 class="h4 mt-4">Contact Form Integration</h2>
+  <p>Every <code>&lt;form&gt;</code> on <code>contact.html</code> is marked with <code>data-validate-form</code> for client-side validation and currently simulates submission in <code>main.js</code>. To connect a real backend:</p>
+  <ul>
+    <li><strong>Formspree:</strong> set <code>action="https://formspree.io/f/your-id"</code> and <code>method="POST"</code> on the <code>&lt;form&gt;</code> tag.</li>
+    <li><strong>Netlify Forms:</strong> add <code>data-netlify="true"</code> and a hidden <code>&lt;input type="hidden" name="form-name" value="contact"&gt;</code> matching the form's <code>name</code> attribute.</li>
+  </ul>
+  <p>Then replace the simulated <code>setTimeout</code> submit handler in <code>main.js</code> with a real <code>fetch()</code> call, or let the form submit natively for Netlify.</p>
+
+  <div class="d-flex justify-content-between mt-5">
+    <a href="installation-guide.html" class="read-more-link"><i class="bi bi-arrow-left"></i> Installation Guide</a>
+    <a href="credits.html" class="read-more-link">Credits <i class="bi bi-arrow-right"></i></a>
+  </div>
+</div>
+</body>
+</html>
