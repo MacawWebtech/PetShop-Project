@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Elena Vidal">
+  <title>Elena Vidal</title>
+  <rect width="200" height="200" fill="#5fb4d8"/>
+  <circle cx="160" cy="34" r="46" fill="#fff" opacity=".16"/>
+  <path d="M50 96 Q40 40 100 36 Q160 40 150 96 Q156 130 140 148 Q126 138 128 118 L72 118 Q74 138 60 148 Q44 130 50 96Z" fill="#5a3421"/>
+  <path d="M20 200 Q24 152 78 146 L122 146 Q176 152 180 200Z" fill="#ff6f3c"/>
+  <path d="M84 146 L100 168 L116 146Z" fill="#e8b98f"/>
+  <rect x="88" y="124" width="24" height="28" rx="10" fill="#e8b98f"/>
+  <ellipse cx="100" cy="94" rx="35" ry="40" fill="#e8b98f"/>
+  <ellipse cx="65" cy="98" rx="6" ry="9" fill="#e8b98f"/><ellipse cx="135" cy="98" rx="6" ry="9" fill="#e8b98f"/>
+  <path d="M62 80 Q68 50 104 48 Q136 50 138 80 Q124 60 100 62 Q78 62 62 80Z" fill="#5a3421"/>
+  <circle cx="84" cy="94" r="3.6" fill="#1c2530"/><circle cx="116" cy="94" r="3.6" fill="#1c2530"/>
+  <path d="M77 84 Q84 80 91 84 M109 84 Q116 80 123 84" stroke="#5a3421" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <ellipse cx="72" cy="108" rx="6" ry="4" fill="#ff8a7a" opacity=".35"/><ellipse cx="128" cy="108" rx="6" ry="4" fill="#ff8a7a" opacity=".35"/>
+  <path d="M88 112 Q100 122 112 112" stroke="#8a3b2a" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
