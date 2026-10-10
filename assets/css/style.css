@@ -1071,6 +1071,9 @@ select:focus-visible,
 .filter-block:last-child { border-bottom: none; margin-bottom: 0; }
 .filter-block h4 { font-size: 1rem; }
 .filter-check { display: flex; align-items: center; justify-content: space-between; padding: 0.35rem 0; color: var(--ink-500); }
+/* Category counts: Bootstrap's .text-body-secondary follows data-bs-theme, but this site toggles data-theme,
+   so the counts stayed dark grey on the dark sidebar. Tie them to the site's own tokens instead. */
+.filter-check .text-body-secondary { color: var(--ink-500) !important; }
 .toolbar-shop { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; justify-content: space-between; margin-bottom: 1.75rem; }
 
 .pagination-pet .page-link {
@@ -1473,3 +1476,8 @@ main#main-content > section:last-of-type { padding-bottom: calc(5.5rem + 56px); 
 }
 .map-embed iframe { display: block; width: 100%; height: 100%; max-width: 100%; border: 0; }
 @media (max-width: 767.98px) { .map-embed { height: 320px; border-radius: var(--radius-md); } }
+
+/* Dark mode: keep Bootstrap secondary-text utilities readable (site uses data-theme, not data-bs-theme) */
+[data-theme='dark'] .text-body-secondary,
+[data-theme='dark'] .text-muted,
+[data-theme='dark'] .text-secondary { color: var(--ink-500) !important; }
